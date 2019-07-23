@@ -6,5 +6,5 @@ module.exports = input => {
 		throw new TypeError('Expected a Buffer or string');
 	}
 
-	return crypto.createHash('md5').update(input).digest('hex').slice(0, 10);
+	return crypto.createHash('md5').update(input).digest('hex');
 };
